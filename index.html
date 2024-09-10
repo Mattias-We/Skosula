@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekommenderad Skosula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rekommenderad Skosula</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Ladda upp dina mått</h2>
+            <form id="measurementForm">
+                <label for="footLength">Fotlängd (cm):</label>
+                <input type="number" id="footLength" name="footLength" step="0.1" required>
+                
+                <label for="footWidth">Fotbredd (cm):</label>
+                <input type="number" id="footWidth" name="footWidth" step="0.1" required>
+                
+                <button type="submit">Rekommendera skosula</button>
+            </form>
+            
+            <div id="result">
+                <h2>Rekommenderad storlek:</h2>
+                <p id="sizeRecommendation"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Skosulor AB</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
